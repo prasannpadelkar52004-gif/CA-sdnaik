@@ -4,14 +4,13 @@
   "engines": {
     "node": "20.x"
   },
-  "scripts": {
-    "ng": "ng",
-    "start": "ng serve",
-    "build": "node dist/CA-sdnaik/server/server.mjs",
-    "watch": "ng build --watch --configuration development",
-    "test": "ng test",
-    "serve:ssr:CA-sdnaik": "node dist/CA-sdnaik/server/server.mjs"
-  },
+"scripts": {
+  "ng": "ng",
+  "build": "ng build",
+  "start": "node dist/CA-sdnaik/server/server.mjs",
+  "watch": "ng build --watch --configuration development",
+  "test": "ng test"
+},
   "private": true,
   "packageManager": "npm@11.11.0",
   "dependencies": {
