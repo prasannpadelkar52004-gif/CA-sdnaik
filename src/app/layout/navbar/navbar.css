@@ -1,0 +1,69 @@
+.navbar {
+  background-color: white !important;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  transition: 0.3s;
+  z-index: 1000;
+}
+
+.navbar.scrolled {
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.navbar-logo {
+  height: 90px;
+  transition: 0.3s;
+}
+
+.nav-link {
+  font-size: 15px;
+  margin: 0 8px;
+  position: relative;
+  background-image: linear-gradient(#007b5e, #007b5e);
+  background-size: 0% 2px;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  transition: 0.3s;
+}
+
+.nav-link:hover {
+  color: #007b5e;
+  background-size: 100% 2px;
+}
+
+@media (max-width: 991px) {
+  .navbar-logo {
+    height: 55px;
+  }
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@media (max-width: 991px) {
+
+  /* Reset dropdown positioning for mobile */
+  .dropdown-menu {
+    left: 0 !important;
+    transform: none !important;
+    position: static !important;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  /* Make Services button full width */
+  .nav-item.dropdown {
+    width: 100%;
+  }
+
+  .dropdown-toggle {
+    width: 100%;
+    text-align: center;
+  }
+}

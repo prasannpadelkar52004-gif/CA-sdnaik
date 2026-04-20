@@ -1,0 +1,91 @@
+<footer>
+  <div class="container">
+
+    <!-- TOP SECTION -->
+    <div class="row g-4">
+
+      <div class="col-md-3">
+        <img src="/images/SD_Naik_2.png" alt="Logo" style="width: 280px; height:180px;">
+      </div>
+
+      <div class="col-md-2">
+        <h5>Company</h5>
+        <ul class="list-unstyled">
+          <li><a [routerLink]="['/about']">About Us</a></li>
+         <li><a [routerLink]="['/contactus']">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="col-lg-3 col-md-6">
+  <h5>Services</h5>
+  <ul class="list-unstyled">
+    <li><a href="/tax-preparation">Tax Preparation</a></li>
+    <li><a href="/accounting-bookkeeping">Bookkeeping</a></li>
+    <li><a href="/audit">Audit & Assurance</a></li>
+    <li><a href="/financial-analysis">Financial Analysis</a></li>
+    <li><a href="/finalisation">Accounts Finalisation</a></li>
+    <li><a href="/payroll">Payroll Services</a></li>
+    <li><a href="/mis-reporting">MIS & Reporting</a></li>
+    <li><a href="/financial-statements">Preparation of Financials</a></li>
+  </ul>
+</div>
+
+      <div class="col-md-2">
+  <h5>Address</h5>
+  <p>
+    103 10th Floor, Shree Swami Samartha Darshan B wing,<br>
+    Padmabai Thakkar Road, Opp. Kohinoor Square gate no. 2,<br>
+    Shivaji Park, Mahim, Mumbai 400016.
+  </p>
+</div>
+
+      <div class="col-md-2">
+        <h5>Contact Us</h5>
+        <p><strong>+91 98211 12098</strong></p>
+        <p>canaiksunil@gmail.com</p>
+      </div>
+
+    </div>
+
+    <!-- CLOCK SECTION -->
+    <div class="row mt-4 align-items-end">
+      <div class="col-md-7 d-none d-md-block"></div>
+
+      <div class="col-12 col-md-5">
+        <div class="footer-clock">
+
+          <div *ngFor="let c of clocks">
+
+            <div class="clock">
+
+              <!-- HANDS -->
+              <div class="hand hour" [style.transform]="c.hour"></div>
+              <div class="hand minute" [style.transform]="c.minute"></div>
+              <div class="hand second" [style.transform]="c.second"></div>
+
+              <!-- NUMBERS -->
+              <div *ngFor="let n of numbers; let i = index"
+                   class="clock-number"
+                   [style.left.%]="positions[i].x"
+                   [style.top.%]="positions[i].y">
+                {{n}}
+              </div>
+
+            </div>
+
+           <strong>{{c.label}}</strong>
+              <span class="time-text">{{c.time}}</span>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER BOTTOM -->
+    <div class="footer-bottom mt-4">
+      <p>Copyright © 2026 CA Sunil D Naik | All rights reserved.</p>
+    </div>
+
+  </div>
+</footer>

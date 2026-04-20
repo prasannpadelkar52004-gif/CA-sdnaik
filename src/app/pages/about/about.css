@@ -1,0 +1,189 @@
+/* ================= ABOUT SECTION ================= */
+.about-section {
+  padding: 120px 20px 40px;
+  background: #fff;
+}
+
+.about-section h1 {
+  padding-top: 70px; /* navbar spacing */
+}
+
+/* Container Layout */
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  max-width: 1200px;
+  margin: auto;
+  align-items: center;
+}
+
+/* Image + Text */
+.about-img,
+.about-text {
+  flex: 1 1 100%;
+  text-align: center;
+}
+
+.about-img img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.about-text h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+  color: #1e463e;
+}
+
+.about-text p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.7;
+}
+
+/* ================= ICON BOX SECTION ================= */
+.icon-box-section {
+  padding: 60px 20px;
+}
+
+.icon-box {
+  background: white;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  text-align: center;
+  transition: 0.3s ease;
+}
+
+.icon-box:hover {
+  transform: translateY(-5px);
+}
+
+/* Icons */
+.icon-box img {
+  height: 70px;
+  margin-bottom: 15px;
+}
+
+.icon-box h3 {
+  font-size: 20px;
+  color: #1e463e;
+}
+
+.icon-box p {
+  font-size: 15px;
+  color: #444;
+}
+
+/* ================= WHY CARDS ================= */
+.why-card {
+  transition: all 0.3s ease;
+}
+
+.why-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.why-card:hover h5 {
+  color: #0d6efd;
+}
+
+
+
+/* ================= FOUNDER TEXT ================= */
+.founder-text p {
+  margin-bottom: 18px;
+  line-height: 1.75;
+  font-size: 15.5px;
+  color: #444;
+}
+
+.founder-text {
+  margin-bottom: 18px;
+  line-height: 1.75;
+  font-size: 15.5px;
+  color: #444;
+}
+
+/* ================= ASSOCIATES ================= */
+.associates-section {
+  border-top: 1px solid #d6a25e;
+}
+
+.section-title {
+  font-weight: 700;
+  color: #003865;
+}
+
+.firm-name {
+  font-size: 22px;
+  font-weight: 700;
+  color: #003865;
+}
+
+.firm-sub {
+  color: #777;
+}
+
+.firm-desc {
+  color: #555;
+}
+
+.firm-points {
+  padding-left: 18px;
+}
+
+.read-more {
+  display: inline-block;
+  margin-top: 10px;
+  font-weight: 600;
+  font-size: 14px;
+  color: #000;
+  text-decoration: none;
+}
+
+.read-more:hover {
+  text-decoration: underline;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 767px) {
+
+  .about-section {
+    padding: 80px 15px 30px;
+  }
+
+  .about-section h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+
+  .about-text h2 {
+    font-size: 22px;
+  }
+
+  .about-text p {
+    font-size: 15px;
+  }
+}
+
+/* Tablet + Desktop Layout */
+@media (min-width: 768px) {
+  .about-img,
+  .about-text {
+    flex: 1;
+    text-align: left;
+  }
+}
+
+/* Footer Clock Fix */
+@media (max-width: 768px) {
+  .footer-clock .col-3 {
+    width: 50%;
+    margin-bottom: 15px;
+  }
+}

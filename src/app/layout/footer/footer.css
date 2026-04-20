@@ -1,0 +1,148 @@
+/* ================= FOOTER ================= */
+footer {
+  background: #001F3F;
+  color: white;
+  padding: 40px 20px;
+}
+
+footer h5 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+
+
+/* ================= CLOCK LAYOUT ================= */
+.footer-clock {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 35px;
+  flex-wrap: nowrap;
+  margin-top: 30px;
+}
+
+.footer-clock > div {
+  text-align: center;
+  width: 100px;
+}
+
+/* ================= LABEL + TIME ================= */
+.footer-clock strong {
+  display: block;
+  margin-top: 8px;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.footer-clock span {
+  display: block;
+  font-size: 13px;
+  margin-top: 4px;
+  color: #ddd;
+}
+
+/* ================= CLOCK DESIGN ================= */
+.clock {
+  width: 90px;
+  height: 90px;
+  border: 2px solid #666;
+  border-radius: 50%;
+  position: relative;
+  background: #f2f2f2;
+  margin: auto;
+  overflow:visible;   /* 🔥 FIX */
+}
+
+/* CENTER DOT */
+.clock::after {
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  background: #000;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 20;
+}
+
+/* ================= CLOCK HANDS ================= */
+.hand {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform-origin: 50% 100%;
+  transform: translate(-50%, -100%);
+  z-index: 10;
+  display: block;
+  transition: none;   /* 🔥 VERY IMPORTANT */
+}
+
+/* HOUR HAND */
+.hand.hour {
+  width: 5px;
+  height: 28%;
+  background: #000 !important;
+  border-radius: 3px;
+}
+
+/* MINUTE HAND */
+.hand.minute {
+  width: 3px;
+  height: 38%;
+  background: #000 !important;
+}
+
+/* SECOND HAND */
+.hand.second {
+  width: 2px;
+  height: 42%;
+  background: red !important;
+}
+
+/* ================= CLOCK NUMBERS ================= */
+.clock-number {
+  position: absolute;
+  font-size: 9px;
+  font-weight: 700;
+  color: #000;
+  transform: translate(-50%, -50%);
+  z-index: 5;
+}
+
+/* ================= FOOTER BOTTOM ================= */
+.footer-bottom p {
+  text-align: left;
+  font-size: 13px;
+  margin-top: 25px;
+  color: #ccc;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+  .footer-clock {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .footer-clock > div {
+    width: 80px;
+  }
+
+  .clock {
+    width: 70px;
+    height: 70px;
+  }
+
+  .clock-number {
+    font-size: 8px;
+  }
+} 

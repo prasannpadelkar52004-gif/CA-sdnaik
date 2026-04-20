@@ -1,0 +1,264 @@
+<!-- About Section -->
+<section class="about-section">
+  <h1 class="fw-bold text-center mb-5" style="color:#001F3F;">ABOUT</h1>
+
+  <div class="about-container">
+
+    <!-- Image -->
+    <div class="about-img">
+      <img src="/images/SD_Naik_2.png" alt="SD_Naik">
+    </div>
+
+    <!-- Text -->
+    <div class="about-text">
+      <h2 class="fw-bold text-start mb-4" style="color:#001F3F;">
+        CA Sunil D. Naik
+      </h2>
+
+        <p>
+    CA Sunil D. Naik is a qualified Chartered Accountant with a distinguished professional standing of over
+    <strong>44 years</strong>. He is also qualified as a <strong>Company Secretary, Cost Accountant, and Arbitrator</strong>.
+        </p>
+
+  <p>
+    He is an <strong>All India Rank Holder</strong> in both the Chartered Accountancy and Company Secretary
+    examinations, reflecting exceptional academic and professional excellence.
+  </p>
+
+      <p>
+    CA Sunil D. Naik has an established practice providing comprehensive professional services in
+    <strong>Audit, Income Tax, Goods & Services Tax (GST), RERA, Project Financing,</strong> and
+    <strong>Arbitration assignments</strong>.
+    He specializes in delivering <strong>offshore accounting and audit support services</strong> tailored
+    for CPAs and accounting firms, enabling global clients to enhance efficiency and maintain regulatory compliance.
+  </p>
+
+  <p>
+    Supported by a team of qualified professionals, the firm delivers accurate, timely, and compliant solutions,
+    including <strong>bookkeeping, tax preparation, and audit documentation</strong>.
+    Acting as an extended arm of client practices, the firm helps organizations scale efficiently,
+    reduce operational overheads, and focus on high-value advisory and strategic services.
+  </p>
+  
+      <p class="mt-4">
+        <strong>Founder</strong><br>
+        CA Sunil D. Naik<br>
+        <span class="text-muted small">
+          B.Com., F.C.A., L.C.S., A.I.C.W.A.
+        </span>
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<!-- Vision & Mission -->
+<section class="icon-box-section bg-white">
+  <h1 class="fw-bold text-center mb-5" style="color:#001F3F;">
+    Vision & Mission
+  </h1>
+
+  <div class="row g-4 justify-content-center container mx-auto">
+
+    <div class="col-md-5 icon-box">
+      <img src="/images/vision.png">
+      <h3>Our Vision</h3>
+      <p>To be globally respected for delivering excellence and integrity.</p>
+    </div>
+
+    <div class="col-md-5 icon-box">
+      <img src="/images/mission.png">
+      <h3>Our Mission</h3>
+      <p>To empower businesses with reliable financial solutions.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- Why Section -->
+<section class="bg-light py-5">
+  <div class="container">
+
+    <h2 class="fw-bold text-center mb-5" style="color:#001F3F;">
+      Why CA Sunil D. Naik?
+    </h2>
+
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4">
+
+      <div class="col" *ngFor="let item of whyItems">
+        <div class="why-card p-4 bg-white rounded-4 shadow-sm text-center h-100">
+
+          <img [src]="item.icon" style="height:60px;" class="mb-3">
+
+          <h5 class="fw-bold text-dark">{{ item.title }}</h5>
+
+          <p class="text-muted mb-0">{{ item.desc }}</p>
+
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<section class="team-section py-5 bg-light">
+  <div class="container">
+
+    <h2 class="fw-bold text-center mb-5" style="color:#001F3F;">FOUNDER</h2>
+
+    <div class="row justify-content-center">
+      <div class="col-lg-7 col-md-9">
+
+        <div class="card border-0 shadow-lg rounded-4">
+          <div class="card-body p-4 p-md-5">
+
+            <!-- Name -->
+            <h5 class="fw-bold text-center mb-4" style="color:#001F3F;">
+              CA SUNIL D. NAIK
+            </h5>
+
+            <p class="text-muted small text-center mb-2">
+              B.Com., F.C.A., L.C.S., A.I.C.W.A.
+            </p>
+
+            <!-- Info Box -->
+            <div class="bg-light rounded-3 p-3 mb-4">
+              <p class="text-secondary text-center mb-4">
+                Proprietor<br>
+                The firm is supported by an experienced in-house team comprising a
+            <strong>Chartered Accountant, an Advocate</strong>, and dedicated accounting professionals.
+             <br><br>
+              <span class="d-block">
+             <i class="bi bi-check-circle-fill text-primary me-1"></i>
+            <strong>Canada Operations:</strong> 8 skilled accounting professionals supporting a
+            Canadian chain of supermarkets.
+             </span>
+
+                <br><br>
+                <span class="d-block mt-2">
+             <i class="bi bi-check-circle-fill text-primary me-1"></i>
+             <strong>India Operations:</strong> 12 skilled accounting professionals managing
+            accounting, taxation, and compliance assignments in India.
+             </span>
+              </p>
+            </div>
+
+            <hr class="my-4">
+
+            <!-- Indian Expertise -->
+            <div class="mb-4">
+              <h6 class="fw-semibold text-primary mb-3">
+                <i class="bi bi-building me-2"></i>Indian Professional Expertise
+              </h6>
+
+              <ul class="list-unstyled text-secondary small">
+                 <li class="mb-2"><i class="bi bi-check-circle me-2 text-primary"></i>RERA Registration, Compliance & Litigation</li>
+                <li class="mb-2"><i class="bi bi-check-circle me-2 text-primary"></i>Faculty at RERA Seminars (ICAI & other forums)</li>
+                <li class="mb-2"><i class="bi bi-check-circle me-2 text-primary"></i>Audit, Income Tax, GST & Accounting Services</li>
+                <li><i class="bi bi-check-circle me-2 text-primary"></i>Corporate Services & Corporate Finance</li>
+              </ul>
+            </div>
+
+            <!-- Toggle Button -->
+            <div class="text-center">
+              <button
+                class="btn btn-outline-primary btn-sm px-4"
+                (click)="toggleReadMore()">
+
+                {{ showMore ? 'Show Less' : 'Read More' }}
+
+              </button>
+            </div>
+
+            <!-- Hidden Section -->
+            <div *ngIf="showMore" class="mt-4">
+
+              <hr class="my-4">
+
+              <!-- International -->
+              <div class="mb-4">
+                <h6 class="fw-semibold text-primary mb-3">
+                  <i class="bi bi-globe-americas me-2"></i>International Professional Expertise
+                </h6>
+
+                <p class="text-secondary small mb-3">
+                  Associated with a <strong>Canadian Chain of Supermarkets</strong> since August 2017,
+                  delivering end-to-end accounting, payroll, compliance and e-commerce finance support.
+                </p>
+
+                <ul class="list-unstyled text-secondary small">
+                  <li class="mb-2"><i class="bi bi-check-circle me-2 text-primary"></i>USA & Canada bank reconciliation</li>
+                  <li class="mb-2"><i class="bi bi-check-circle me-2 text-primary"></i>Purchase invoice posting & payments</li>
+                  <li class="mb-2"><i class="bi bi-check-circle me-2 text-primary"></i>E-commerce payment processing</li>
+                  <li class="mb-2"><i class="bi bi-check-circle me-2 text-primary"></i>Royalty, MIS & sales tax refund files</li>
+                  <li class="mb-2"><i class="bi bi-check-circle me-2 text-primary"></i>Payroll & expense journal entries</li>
+                  <li class="mb-2"><i class="bi bi-check-circle me-2 text-primary"></i>E-Commerce Customer Credit Applications</li>
+                  <li class="mb-2"><i class="bi bi-check-circle me-2 text-primary"></i>New & existing customer credit processing</li>
+                  <li class="mb-2"><i class="bi bi-check-circle me-2 text-primary"></i>Invoice completeness checks & franchisee coordination</li>
+                  <li class="mb-2"><i class="bi bi-check-circle me-2 text-primary"></i>Royalty Collection Payment Application</li>
+                </ul>
+              </div>
+
+              <!-- NRI -->
+              <div>
+                 <h6 class="fw-semibold text-primary mb-3">
+                  <i class="bi bi-person-workspace me-2"></i>NRI Services
+                </h6>
+
+                <p class="text-secondary small">
+                   Providing comprehensive services to Non-Resident Indians for acquisition,
+                  maintenance and sale of real estate in India, along with Income Tax
+                  and banking compliance.
+                </p>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ASSOCIATES SECTION -->
+<section class="associates-section py-5">
+  <div class="container">
+    <h2 class="section-title text-center mb-5">ASSOCIATES</h2>
+
+    <div class="row g-4">
+      <div class="col-lg-4" *ngFor="let firm of associates">
+
+        <h4 class="firm-name">{{ firm.name }}</h4>
+        <p class="firm-sub">{{ firm.sub }}</p>
+
+        <p class="firm-desc">{{ firm.desc }}</p>
+
+        <ul class="firm-points">
+          <li *ngFor="let p of firm.points">{{ p }}</li>
+        </ul>
+
+        <a class="read-more"
+           data-bs-toggle="collapse"
+           [attr.href]="'#' + firm.collapseId">
+          View {{ firm.title }} →
+        </a>
+
+        <div class="collapse mt-3" [id]="firm.collapseId">
+          <p><strong>{{ firm.title }}:</strong></p>
+
+          <div *ngFor="let partner of firm.partners">
+            <p>
+                <strong>{{ partner.name }}</strong><br>
+                <span [innerHTML]="partner.desc"></span>
+                </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>

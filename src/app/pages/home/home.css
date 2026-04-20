@@ -1,0 +1,154 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* HERO */
+.hero-video-section video {
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.4);
+}
+
+/* TEXT */
+.text-glow {
+  color: white;
+  text-shadow: 0 0 6px #285234;
+}
+
+.text-outline {
+  color: white;
+}
+
+/* BUTTON */
+.btn-brand {
+  background-color: #001F3F;
+  color: white;
+}
+
+/* SERVICES */
+.services-section {
+  background-color: #f5f7fa;
+  font-family: 'Poppins', sans-serif;
+}
+
+.service-box {
+  display: flex;
+  align-items: center;
+
+  border: 1.5px solid #001F3F;
+  border-radius: 40px;
+
+  padding: 20px 25px;
+  margin-bottom: 20px;
+
+  font-weight: 500;
+  font-size: 16px;
+
+  color: #001F3F;
+  background-color: #ffffff;
+
+  transition: all 0.3s ease;
+}
+
+.service-link {
+  text-decoration: none;
+  display: block;
+}
+
+
+/* ICON */
+.service-box img {
+  width: 30px;
+  margin-right: 12px;
+  transition: filter 0.3s ease;
+}
+
+/* HOVER */
+.service-box:hover {
+  background-color: #062a4d;
+  color: white;
+  transform: translateY(-4px);
+}
+
+.service-box:hover img {
+  filter: brightness(0) invert(1);
+}
+
+/* WHY */
+.why-rr-section {
+  background-color: #f5f7fa; /* better background like design */
+  font-family: 'Poppins', sans-serif;
+  padding: 80px 20px;
+}
+
+.why-rr-section h1 {
+  font-size: 40px;
+  font-weight: 700;
+  color: #001F3F;
+  margin-bottom: 60px;
+}
+
+/* CARD */
+.why-box {
+  background-color: #ffffff;
+  border-radius: 25px;
+  padding: 40px 25px;
+  text-align: center;
+
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+
+  color: #333;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ICON */
+.why-box img {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 15px;
+  transition: filter 0.3s ease;
+}
+
+/* HOVER EFFECT */
+.why-box:hover {
+  background-color: #062a4d; /* deeper blue (better than #001F3F) */
+  color: #fff;
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(6, 42, 77, 0.3);
+}
+
+.why-box:hover img {
+  filter: brightness(0) invert(1);
+}
+
+/* TEXT */
+.why-box h5 {
+  font-weight: 600;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #0b2c4a;
+}
+
+.why-box p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #6b7280;
+  margin: 0;
+}
+
+/* TEXT COLOR ON HOVER */
+.why-box:hover h5,
+.why-box:hover p {
+  color: #ffffff;
+}

@@ -1,0 +1,92 @@
+/* Hero */
+.tax-hero {
+  background: linear-gradient(135deg, #001F3F, #003366);
+  padding: 160px 20px 60px;
+  color: white;
+  text-align: center;
+}
+
+.stylish-heading {
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  margin-bottom: 10px;
+}
+
+/* Intro Section */
+.intro-section {
+  padding: 70px 20px;
+  background-color: #ffffff;
+}
+
+.intro-container {
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
+}
+
+.intro-container h2 {
+  color: #001F3F;
+  font-weight: 700;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.intro-container p {
+  font-size: 18px;
+  color: #555;
+  line-height: 1.8;
+}
+
+/* Service Header */
+.service-header {
+  background-color: #285234;
+  color: white;
+  padding: 70px 20px;
+  text-align: center;
+}
+
+.service-header h1 {
+  font-size: 42px;
+  font-weight: bold;
+}
+
+.service-header p {
+  font-size: 18px;
+  max-width: 800px;
+  margin: 10px auto 0;
+}
+
+/* Cards */
+.service-section {
+  padding: 70px 20px;
+}
+
+.card-custom {
+  border: none;
+  border-radius: 18px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  padding: 30px;
+  margin-bottom: 30px;
+  transition: 0.3s ease;
+}
+
+.card-custom:hover {
+  transform: translateY(-6px);
+}
+
+/* Button */
+.btn-contact {
+  background-color: #285234;
+  color: white;
+  border-radius: 30px;
+  padding: 12px 32px;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+  transition: 0.3s;
+}
+
+.btn-contact:hover {
+  background-color: #1f3f28;
+  color: #fff;
+}

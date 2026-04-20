@@ -1,0 +1,62 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
+  <div class="container-fluid px-4">
+
+    <!-- Logo -->
+    <a class="navbar-brand d-flex align-items-center" routerLink="/">
+      <img src="images/SD_Naik.png" alt="Logo" class="navbar-logo">
+    </a>
+
+    <!-- Toggle -->
+    <button class="navbar-toggler border-0" type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Links -->
+    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent" #navbarCollapse>
+      <ul class="navbar-nav fw-semibold text-center text-lg-start">
+
+        <li class="nav-item">
+          <a class="nav-link text-dark" routerLink="/" 
+   (click)="closeNavbar(navbarCollapse)">Home</a>
+        </li>
+
+        <li class="nav-item">
+        <a class="nav-link text-dark" routerLink="/about" 
+   (click)="closeNavbar(navbarCollapse)">About Us</a>
+        </li>
+
+        <!-- Services Dropdown -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-dark fw-semibold"
+             href="#" data-bs-toggle="dropdown">
+            Services
+          </a>
+
+         <ul class="dropdown-menu custom-dropdown">
+  <li *ngFor="let service of services">
+    <a class="dropdown-item d-flex align-items-center gap-2"
+       [routerLink]="service.link"
+       routerLinkActive="active-service"
+       [routerLinkActiveOptions]="{ exact: true }"
+       (click)="closeNavbar(navbarCollapse)">
+
+      <i [class]="service.icon"></i>
+      <span>{{ service.name }}</span>
+
+    </a>
+  </li>
+</ul>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link text-dark" routerLink="/contactus" 
+   (click)="closeNavbar(navbarCollapse)">Contact Us</a>
+        </li>
+
+      </ul>
+    </div>
+
+  </div>
+</nav>
