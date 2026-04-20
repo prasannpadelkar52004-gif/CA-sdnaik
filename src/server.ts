@@ -39,8 +39,12 @@ app.use(
  * Handle all other requests by rendering the Angular application.
  */
 app.use((req, res, next) => {
+  const url = new URL(
+    `${req.protocol}://${req.headers.host}${req.originalUrl}`
+  );
+
   angularApp
-    .handle(req)
+    .handle(req, { url })
     .then((response) =>
       response ? writeResponseToNodeResponse(response, res) : next(),
     )
